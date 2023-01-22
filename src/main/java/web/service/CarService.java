@@ -14,10 +14,10 @@ public class CarService {
     {
         carList = new ArrayList<>();
         carList.add(new Car("LADA", "White", 1));
-        carList.add(new Car("LADA", "Black", 2));
-        carList.add(new Car("LADA", "Red", 3));
-        carList.add(new Car("LADA", "Blue", 4));
-        carList.add(new Car("LADA", "Silver", 5));
+        carList.add(new Car("Nissan", "Black", 2));
+        carList.add(new Car("Deo", "Red", 3));
+        carList.add(new Car("Ford", "Blue", 4));
+        carList.add(new Car("Opel", "Silver", 5));
 
 
     }
