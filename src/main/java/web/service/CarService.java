@@ -9,24 +9,20 @@ import java.util.stream.Collectors;
 
 @Component
 public class CarService {
-    private List<Car> carList;
+    private final static List<Car> carList = List.of(
 
-    {
-        carList = new ArrayList<>();
-        carList.add(new Car("LADA", "White", 1));
-        carList.add(new Car("Nissan", "Black", 2));
-        carList.add(new Car("Deo", "Red", 3));
-        carList.add(new Car("Ford", "Blue", 4));
-        carList.add(new Car("Opel", "Silver", 5));
+            new Car("LADA", "White", 1),
+            new Car("Nissan", "Black", 2),
+            new Car("Deo", "Red", 3),
+            new Car("Ford", "Blue", 4),
+            new Car("Opel", "Silver", 5));
 
 
+    public List<Car> getCars() {
+        return carList;
     }
 
-  public List<Car> getCars(){
-        return carList;
-  }
-
-    public List<Car> getCountCars(int count){
+    public List<Car> getCountCars(int count) {
         return carList.stream().limit(count).collect(Collectors.toList());
     }
 

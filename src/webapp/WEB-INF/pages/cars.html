@@ -16,7 +16,7 @@ xmlns="http://www.w3.org/1999/xhtml"
     </tr>
     <tr th:each="car: ${cars}">
         <td th:utext="${car.getModel()}">...</td>
-        <td th:utext="${car.getColors()}">...</td>
+        <td th:utext="${car.getColor()}">...</td>
         <td th:utext="${car.getSeries()}">...</td>
     </tr>
 </table>
